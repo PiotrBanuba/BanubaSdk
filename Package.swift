@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-6"
+let bnbPackageVersion: Version = "1.8.0-7"
 
 let package = Package(
     name: "BanubaSdk",
@@ -12,25 +12,25 @@ let package = Package(
         .library(
             name: "BanubaSdk",
             targets: [
-                "BanubaSdk",
-                "BNBSdkCore",
-                "BNBSdkApi",
-                "BNBEffectPlayer",
-                "BNBScripting",
-                "BNBFaceTracker",
-                "BNBFaceTrackerLite",
-                "BNBLips",
-                "BNBHair",
-                "BNBHands",
-                "BNBWatch",
-                "BNBOcclusion",
-                "BNBEyes",
-                "BNBSkin",
-                "BNBBackground",
-                "BNBBody",
-                "BNBAcneEyebagsRemoval",
-                "BNBPoseEstimation",
-                "BNBNeurobeautyMakeup"
+                "BanubaSdkBanubaSdkTarget",
+                "BanubaSdkBNBSdkCoreTarget",
+                "BanubaSdkBNBSdkApiTarget",
+                "BanubaSdkBNBEffectPlayerTarget",
+                "BanubaSdkBNBScriptingTarget",
+                "BanubaSdkBNBFaceTrackerTarget",
+                "BanubaSdkBNBFaceTrackerLiteTarget",
+                "BanubaSdkBNBLipsTarget",
+                "BanubaSdkBNBHairTarget",
+                "BanubaSdkBNBHandsTarget",
+                "BanubaSdkBNBWatchTarget",
+                "BanubaSdkBNBOcclusionTarget",
+                "BanubaSdkBNBEyesTarget",
+                "BanubaSdkBNBSkinTarget",
+                "BanubaSdkBNBBackgroundTarget",
+                "BanubaSdkBNBBodyTarget",
+                "BanubaSdkBNBAcneEyebagsRemovalTarget",
+                "BanubaSdkBNBPoseEstimationTarget",
+                "BanubaSdkBNBNeurobeautyMakeupTarget"
             ]
         ),
     ],
@@ -115,7 +115,7 @@ let package = Package(
             checksum: "cfb1ddb256c4aa1dc3ca5be4447e924a67cdd2f0fcf309cdb456caf481e99e1b"
         ),
         .target(
-            name: "BNBSdkCore",
+            name: "BanubaSdkBNBSdkCoreTarget",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -124,7 +124,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBSdkApi",
+            name: "BanubaSdkBNBSdkApiTarget",
             dependencies: [
                 .product(
                     name: "BNBSdkApi",
@@ -133,7 +133,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBEffectPlayer",
+            name: "BanubaSdkBNBEffectPlayerTarget",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -142,7 +142,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBScripting",
+            name: "BanubaSdkBNBScriptingTarget",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -151,7 +151,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBFaceTracker",
+            name: "BanubaSdkBNBFaceTrackerTarget",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
@@ -160,7 +160,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBFaceTrackerLite",
+            name: "BanubaSdkBNBFaceTrackerLiteTarget",
             dependencies: [
                 .product(
                     name: "BNBFaceTrackerLite",
@@ -169,7 +169,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBLips",
+            name: "BanubaSdkBNBLipsTarget",
             dependencies: [
                 .product(
                     name: "BNBLips",
@@ -178,7 +178,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHair",
+            name: "BanubaSdkBNBHairTarget",
             dependencies: [
                 .product(
                     name: "BNBHair",
@@ -187,7 +187,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBHands",
+            name: "BanubaSdkBNBHandsTarget",
             dependencies: [
                 .product(
                     name: "BNBHands",
@@ -196,7 +196,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBWatch",
+            name: "BanubaSdkBNBWatchTarget",
             dependencies: [
                 .product(
                     name: "BNBWatch",
@@ -205,7 +205,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBOcclusion",
+            name: "BanubaSdkBNBOcclusionTarget",
             dependencies: [
                 .product(
                     name: "BNBOcclusion",
@@ -214,7 +214,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBEyes",
+            name: "BanubaSdkBNBEyesTarget",
             dependencies: [
                 .product(
                     name: "BNBEyes",
@@ -223,7 +223,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBSkin",
+            name: "BanubaSdkBNBSkinTarget",
             dependencies: [
                 .product(
                     name: "BNBSkin",
@@ -232,7 +232,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBackground",
+            name: "BanubaSdkBNBBackgroundTarget",
             dependencies: [
                 .product(
                     name: "BNBBackground",
@@ -241,7 +241,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBBody",
+            name: "BanubaSdkBNBBodyTarget",
             dependencies: [
                 .product(
                     name: "BNBBody",
@@ -250,7 +250,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBAcneEyebagsRemoval",
+            name: "BanubaSdkBNBAcneEyebagsRemovalTarget",
             dependencies: [
                 .product(
                     name: "BNBAcneEyebagsRemoval",
@@ -259,7 +259,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBPoseEstimation",
+            name: "BanubaSdkBNBPoseEstimationTarget",
             dependencies: [
                 .product(
                     name: "BNBPoseEstimation",
@@ -268,7 +268,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeup",
+            name: "BanubaSdkBNBNeurobeautyMakeupTarget",
             dependencies: [
                 .product(
                     name: "BNBNeurobeautyMakeup",
