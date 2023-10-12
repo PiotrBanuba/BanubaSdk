@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-3"
+let bnbPackageVersion: Version = "1.8.0-4"
 
 let package = Package(
     name: "BanubaSdk",
@@ -11,79 +11,27 @@ let package = Package(
     products: [
         .library(
             name: "BanubaSdk",
-            targets: ["BanubaSdk"]
-        ),
-        .library(
-            name: "BNBSdkCore",
-            targets: ["BNBSdkCore"]
-        ),
-        .library(
-            name: "BNBSdkApi",
-            targets: ["BNBSdkApi"]
-        ),
-        .library(
-            name: "BNBEffectPlayer",
-            targets: ["BNBEffectPlayer"]
-        ),
-        .library(
-            name: "BNBScripting",
-            targets: ["BNBScripting"]
-        ),
-        .library(
-            name: "BNBFaceTracker",
-            targets: ["BNBFaceTracker"]
-        ),
-        .library(
-            name: "BNBFaceTrackerLite",
-            targets: ["BNBFaceTrackerLite"]
-        ),
-        .library(
-            name: "BNBLips",
-            targets: ["BNBLips"]
-        ),
-        .library(
-            name: "BNBHair",
-            targets: ["BNBHair"]
-        ),
-        .library(
-            name: "BNBHands",
-            targets: ["BNBHands"]
-        ),
-        .library(
-            name: "BNBWatch",
-            targets: ["BNBWatch"]
-        ),
-        .library(
-            name: "BNBOcclusion",
-            targets: ["BNBOcclusion"]
-        ),
-        .library(
-            name: "BNBEyes",
-            targets: ["BNBEyes"]
-        ),
-        .library(
-            name: "BNBSkin",
-            targets: ["BNBSkin"]
-        ),
-        .library(
-            name: "BNBBackground",
-            targets: ["BNBBackground"]
-        ),
-        .library(
-            name: "BNBBody",
-            targets: ["BNBBody"]
-        ),
-        .library(
-            name: "BNBAcneEyebagsRemoval",
-            targets: ["BNBAcneEyebagsRemoval"]
-        ),
-        .library(
-            name: "BNBPoseEstimation",
-            targets: ["BNBPoseEstimation"]
-        ),
-        .library(
-            name: "BNBNeurobeautyMakeup",
-            targets: ["BNBNeurobeautyMakeup"]
+            targets: [
+                "BanubaSdk",
+                "BNBSdkCore",
+                "BNBSdkApi",
+                "BNBEffectPlayer",
+                "BNBScripting",
+                "BNBFaceTracker",
+                "BNBFaceTrackerLite",
+                "BNBLips",
+                "BNBHair",
+                "BNBHands",
+                "BNBWatch",
+                "BNBOcclusion",
+                "BNBEyes",
+                "BNBSkin",
+                "BNBBackground",
+                "BNBBody",
+                "BNBAcneEyebagsRemoval",
+                "BNBPoseEstimation",
+                "BNBNeurobeautyMakeup"
+            ]
         ),
     ],
     dependencies: [
