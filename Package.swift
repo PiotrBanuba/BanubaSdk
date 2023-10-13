@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BanubaSdk",
@@ -13,24 +13,24 @@ let package = Package(
             name: "BanubaSdk",
             targets: [
                 "BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target",
-                "BanubaSdk_BanubaSdk_Target"
+                "BanubaSdk_BNBSdkCore_Target",
+                "BanubaSdk_BNBSdkApi_Target",
+                "BanubaSdk_BNBEffectPlayer_Target",
+                "BanubaSdk_BNBScripting_Target",
+                "BanubaSdk_BNBFaceTracker_Target",
+                "BanubaSdk_BNBFaceTrackerLite_Target",
+                "BanubaSdk_BNBLips_Target",
+                "BanubaSdk_BNBHair_Target",
+                "BanubaSdk_BNBHands_Target",
+                "BanubaSdk_BNBWatch_Target",
+                "BanubaSdk_BNBOcclusion_Target",
+                "BanubaSdk_BNBEyes_Target",
+                "BanubaSdk_BNBSkin_Target",
+                "BanubaSdk_BNBBackground_Target",
+                "BanubaSdk_BNBBody_Target",
+                "BanubaSdk_BNBAcneEyebagsRemoval_Target",
+                "BanubaSdk_BNBPoseEstimation_Target",
+                "BanubaSdk_BNBNeurobeautyMakeup_Target"
             ]
         ),
     ],
