@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-64-g951557ebd1"
+let bnbPackageVersion: Version = "1.9.1-83-gf89cbbd807"
 
 let package = Package(
     name: "BanubaSdk",
@@ -30,7 +30,9 @@ let package = Package(
                 "BanubaSdk_BNBBody",
                 "BanubaSdk_BNBAcneEyebagsRemoval",
                 "BanubaSdk_BNBPoseEstimation",
-                "BanubaSdk_BNBNeurobeautyMakeup"
+                "BanubaSdk_BNBNeurobeautyMakeup",
+                "BanubaSdk_BNBFaceMatch",
+                "BanubaSdk_BNBVisualClip"
             ]
         ),
     ],
@@ -107,12 +109,20 @@ let package = Package(
             url: "https://github.com/PiotrBanuba/BNBNeurobeautyMakeup.git",
             .exact(bnbPackageVersion)
         ),
+        .package(
+            url: "https://github.com/PiotrBanuba/BNBFaceMatch.git",
+            .exact(bnbPackageVersion)
+        ),
+        .package(
+            url: "https://github.com/PiotrBanuba/BNBVisualClip.git",
+            .exact(bnbPackageVersion)
+        ),
     ],
     targets: [
         .binaryTarget(
             name: "BanubaSdk",
-            url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-64-g951557ebd1/BanubaSdk.zip",
-            checksum: "7da8452cf3a6bdec5d3b18316f51129e67ef69b83b4a2e9645d091ea36cc96c1"
+            url: "https://d2cm7wtcqqw29.cloudfront.net/1.9.1-83-gf89cbbd807/BanubaSdk.zip",
+            checksum: "b7b048eae7a553500ad3dee71936a593d8fcb2085ffc34bc91a6a1cd53c81188"
         ),
         .target(
             name: "BanubaSdk_BNBSdkCore",
@@ -273,6 +283,24 @@ let package = Package(
                 .product(
                     name: "BNBNeurobeautyMakeup",
                     package: "BNBNeurobeautyMakeup"
+                ),
+            ]
+        ),
+        .target(
+            name: "BanubaSdk_BNBFaceMatch",
+            dependencies: [
+                .product(
+                    name: "BNBFaceMatch",
+                    package: "BNBFaceMatch"
+                ),
+            ]
+        ),
+        .target(
+            name: "BanubaSdk_BNBVisualClip",
+            dependencies: [
+                .product(
+                    name: "BNBVisualClip",
+                    package: "BNBVisualClip"
                 ),
             ]
         ),
